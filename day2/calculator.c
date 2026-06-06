@@ -16,21 +16,30 @@ int main()
     {
     case 1:
         a = first_number + second_number;
-        printf("%f", a);
+        printf("Result = %.2f", a);
         break;
     case 2:
         a = first_number - second_number;
-        printf("%f", a);
+        printf("Result = %.2f", a);
         break;
     case 3:
-        a = first_number / second_number;
-        printf("%f", a);
+        if (second_number != 0)
+        {
+            a = first_number / second_number;
+            printf("Result = %.2f", a);
+        }
+        else
+        {
+            printf("Division by zero is not possible");
+        }
         break;
     case 4:
         a = first_number * second_number;
-        printf("%f", a);
+        printf("Result = %Result = .2f", a);
+        break;
+    default:
+        printf("Invalid Choice");
         break;
     }
-
     return 0;
 }
