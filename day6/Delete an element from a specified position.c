@@ -7,7 +7,7 @@ int main(){
     int arr[20] = {88,43,65,86,97,90,34,54,46,37,58,56};
     int length = 12;
     int pos;
-    printf("enter the position you want to delete");
+    printf("enter the position you want to delete.\n");
     scanf("%d",&pos);
     for(int i=pos;i<length;i++){
         arr[i]=arr[i+1];
