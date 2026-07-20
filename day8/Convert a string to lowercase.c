@@ -1,5 +1,5 @@
 /*
-Convert a string to uppercase.
+Convert a string to lowercase.
 */
 #include<stdio.h>
 #include<string.h>
@@ -10,8 +10,9 @@ int main(){
     printf("enter the string:");
     fgets(st,sizeof(st),stdin);
     for(int i =0;i<strlen(st);i++){
-       st[i] = toupper(st[i]);
+       st[i] = tolower(st[i]);
     }
+    printf("the string after lower all character:\n");
     printf("%s",st);
     return 0;
 }
